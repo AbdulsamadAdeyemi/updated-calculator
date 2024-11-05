@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login_container">
+        <h4 class="login">Login</h4> 
+        <form id="login">
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Email" autocomplete="on" >
+            <div id="emailError" class="error-message"></div>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password" autocomplete="on" >
+            <div id="passwordError" class="error-message"></div>
+            <br><br>
+
+            <a href="forgotPassword.html" class="forPassword">Forget Password?</a>
+            <button class="submit" id="submit" type="submit">Login</button>
+        </form>
+        <h4 class="text_or">OR</h4>
+        <button class="Create" id="create" type="button">
+            <a href="registration.html">Create new Account</a>
+        </button>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

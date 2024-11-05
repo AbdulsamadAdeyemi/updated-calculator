@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="registration.css">
+  
+</head>
+
+<body>
+    <div class="registration_Block">
+        <div class="regtext">
+            <h4>Register</h4>
+            <h5> Fill the form carefully for registration.</h5>
+        </div>
+     <!-- HTML Code with error message divs -->
+<form id="register">
+    <label class="padd" for="name">Full name</label>
+    <div class="names">
+        <input type="text" placeholder="firstname" class="registrationName" id="Registration__fullname">
+        <div id="fullname_error" class="errormessage"></div>
+        
+        <input type="text" placeholder="middlename" class="registrationName" id="Registration__middlename">
+        <div id="middlename_error" class="errormessage"></div>
+        
+        <input type="text" placeholder="Lastname" class="registrationName" id="Registration__lastname">
+        <div id="lastname_error" class="errormessage"></div>
+    </div>
+    <br>
+    
+    <label class="padd" for="name">Email</label>
+    <div class="emailpass">
+        <input type="email" placeholder="ex:myname@example.com" class="registrationphone" id="Registration__email">
+        <div id="email_error" class="errormessage"></div>
+    </div>
+    <label class="passtext" for="name">Password</label>
+    <input type="password" placeholder="Password" class="registrationpassword" id="Registration__password">
+    <div id="password_error" class="errormessage"></div>
+    
+    <br>
+    
+    <label class="padd" for="name">Phone number</label>
+    <input type="number" placeholder="Phone Number" class="registrationphone" id="Registration__phone">
+    <div id="phone_error" class="errormessage"></div>
+    
+    <label class="gendertext" for="name">Gender</label>
+    <select id="registration_gender"> 
+        <option value="">Please Select</option>
+        <option value="Male">Male</option> 
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
+    </select>
+    <div id="gender_error" class="errormessage"></div>
+
+    <button type="submit" id="register_submit">Submit</button> 
+</form>
+ </form>
+    </div>
+</body>
+<script src="registration.js"></script>
+</html>

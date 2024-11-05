@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="huge_container">
+              
+        
+        <main>
+            <div class="calculator_screen" id="calculator_screen">
+            
+            </div>
+            
+            <div class="operations">
+                <div class="multiply" id="multiply" onclick="operator('*')">*</div>
+                <div class="divide" id="divide" onclick="operator('/')">/</div>
+                <div class="subtract" id="subtract" onclick="operator('-')">-</div>
+                <div class="add" id="add" onclick="operator('+')">+</div>
+                <div class="nine" id="nine" onclick="operator('9')">9</div>
+                <div class="eight" id="eight" onclick="operator('8')">8</div>
+                <div class="seven" id="seven" onclick="operator('7')">7</div>
+                <div class="six" id="six" onclick="operator('6')">6</div>
+                <div class="five" id="five" onclick="operator('5')">5</div>
+                <div class="four" id="four" onclick="operator('4')">4</div>
+                <div class="three" id="three" onclick="operator('3')">3</div>
+                <div class="two" id="two" onclick="operator('2')">2</div>
+                <div class="one" id="one" onclick="operator('1')">1</div>
+                <div class="zero" id="zero" onclick="operator('0')">0</div>
+                <div class="dot" id="dot" onclick="operator('.')">.</div>
+                <div class="equal_to" id="equal_to" onclick="total_values()">=</div>
+                <div class="cee" id="cee" onclick="clear_screen()">C</div>
+                <div class="history" id="history" onclick="load_history()">H</div>
+            </div>
+        </main>
+        <a href="login.html" class="logout_button">Log Out</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
